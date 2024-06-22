@@ -5,8 +5,13 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./src/sass/styles.scss ./public/assets/css/styles.css",
+    "sass-w": "sass --watch ./src/sass/styles.scss ./public/assets/css/styles.css"
   },
   "author": "Ted Salvador",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
 }
