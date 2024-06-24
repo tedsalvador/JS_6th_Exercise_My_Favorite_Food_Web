@@ -10,11 +10,45 @@ header {
   background-color: #e67e22;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
+  height: 80px;
 }
 
 main {
   padding: 1rem;
+}
+
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.description {
+  flex: 2 1 300px;
+}
+
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.ingredients, .time {
+  flex: 1 1 300px;
 }
 
 h1, h2 {

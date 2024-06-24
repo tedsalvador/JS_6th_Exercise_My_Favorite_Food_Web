@@ -14,11 +14,47 @@ header {
     background-color: $primary-color;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0.5rem; // Añadir padding para controlar el alto
+    height: 80px;
 }
 
 main {
     padding: 1rem;
+}
+
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    flex: 1 1 300px;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        //height: auto;
+        border-radius: 10px;
+    }
+}
+
+.description {
+    flex: 2 1 300px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.ingredients, .time {
+    flex: 1 1 300px;
 }
 
 h1, h2 {
@@ -63,7 +99,7 @@ li label {
     .timer {
         display: flex;
         align-items: center;
-        
+
         input {
             width: 60px;
             margin-right: 1rem;
