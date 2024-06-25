@@ -19,7 +19,7 @@ header {
 }
 
 main {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .intro-container {
@@ -42,19 +42,19 @@ main {
 }
 
 .description {
-    flex: 2 1 300px;
+    flex: 2 1 200px;
 }
 
 .recipe-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 0.3rem;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin-bottom: 0.3rem;
 }
 
 .ingredients, .time {
-    flex: 1 1 300px;
+    flex: 1 1 200px;
 }
 
 h1, h2 {
@@ -62,7 +62,7 @@ h1, h2 {
 }
 
 .description, .ingredients, .time, .instructions {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 ul {
@@ -70,7 +70,7 @@ ul {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 0.5rem;    
 }
 
 li {
@@ -134,7 +134,12 @@ footer {
     background-color: $primary-color;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+	padding:20px;
+
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
 
     .social-media {
         display: flex;
@@ -150,5 +155,14 @@ footer {
                 color: $secondary-color;
             }
         }
+    }
+    
+    .derechos {
+        color:#fff;
+        text-align: center;
+        align-items: center;
+        display: inline-block;
+        align-content: center;
+        padding:10px;
     }
 }
